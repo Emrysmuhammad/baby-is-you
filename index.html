@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baba Is You</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Baba Is You</h1>
+    <label>Level
+      <select id="level-select"></select>
+    </label>
+  </header>
+
+  <main>
+    <div id="board" class="board" aria-label="Game board"></div>
+
+    <aside class="panel">
+      <h2>Active rules</h2>
+      <ul id="rules" class="rules"></ul>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <div class="dpad" aria-label="Movement controls">
+        <span></span>
+        <button data-dir="up" aria-label="Move up">▲</button>
+        <span></span>
+        <button data-dir="left" aria-label="Move left">◀</button>
+        <span></span>
+        <button data-dir="right" aria-label="Move right">▶</button>
+        <span></span>
+        <button data-dir="down" aria-label="Move down">▼</button>
+        <span></span>
+      </div>
+
+      <div class="actions">
+        <button data-action="undo">Undo (Z)</button>
+        <button data-action="restart">Restart (R)</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/rules.js"></script>
+  <script src="js/properties.js"></script>
+  <script src="js/movement.js"></script>
+  <script src="js/conditions.js"></script>
+  <script src="js/history.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
