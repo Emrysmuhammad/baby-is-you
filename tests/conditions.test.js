@@ -24,7 +24,7 @@ test('wins when YOU shares a cell with a WIN object', () => {
 });
 
 test('sinks YOU and the SINK object that share a cell', () => {
-  const state = Grid.parseLevel(['BIY....', 'XIK....', '.....']);
+  const state = Grid.parseLevel(['BIY....', 'XIK....', '.......']);
   state.entities.push(
     { id: 10, kind: 'object', name: 'baby', x: 3, y: 2 },
     { id: 11, kind: 'object', name: 'water', x: 3, y: 2 },
@@ -35,7 +35,7 @@ test('sinks YOU and the SINK object that share a cell', () => {
 });
 
 test('keeps unrelated objects when something sinks', () => {
-  const state = Grid.parseLevel(['BIY....', 'XIK....', '.....']);
+  const state = Grid.parseLevel(['BIY....', 'XIK....', '.......']);
   state.entities.push(
     { id: 10, kind: 'object', name: 'baby', x: 3, y: 2 },
     { id: 11, kind: 'object', name: 'water', x: 3, y: 2 },
