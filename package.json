@@ -1,0 +1,13 @@
+{
+  "name": "baba-is-you",
+  "version": "1.0.0",
+  "description": "A browser rule-pushing puzzle game inspired by Baba Is You.",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
